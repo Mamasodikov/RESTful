@@ -46,7 +46,7 @@
       android:layout_height="wrap_content"
       android:rating="3"
       app:empty_color="#CFCFCF"
-      app:progress_color="#FFBF00"
+      app:progress_color="#FFFFFF"
       style="?android:attr/ratingBarStyleSmall"
       android:layout_marginLeft="8dp"
       android:isIndicator="false"/>
