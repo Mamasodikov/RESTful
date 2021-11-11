@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CategoryRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="5"
+        tools:layoutManager="GridLayoutManager"
+        tools:listitem="@layout/category_item"
+        tools:spanCount="5"
+        android:layout_below="@id/carouselView"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ProductRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CategoryRec"
+        tools:itemCount="5"
+        tools:listitem="@layout/product_item" />
+
+
+</RelativeLayout>

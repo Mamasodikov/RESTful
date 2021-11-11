@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <ImageView
+      android:id="@+id/avatar"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:src="@drawable/ic_launcher_foreground"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="8dp" />
+<LinearLayout
+    android:id="@+id/descs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/avatar"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_marginTop="6dp"
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="@tools:sample/full_names"
+      android:textSize="18sp"
+      android:textColor="@android:color/black"
+      android:layout_marginStart="8dp"/>
+
+  <TextView
+      android:id="@+id/shortDesc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="@tools:sample/full_names"
+      android:textSize="15sp"
+      android:textColor="@android:color/black"
+      android:layout_marginStart="8dp"/>
+
+
+  <hyogeun.github.com.colorratingbarlib.ColorRatingBar
+      android:id="@+id/ratingBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:rating="3"
+      app:empty_color="#CFCFCF"
+      app:progress_color="#FFFB00"
+      style="?android:attr/ratingBarStyleSmall"
+      android:layout_marginLeft="8dp"
+      android:isIndicator="false"/>
+
+  <TextView
+      android:id="@+id/price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="$ 99.99"
+      android:textStyle="bold"
+      android:textSize="15sp"
+      android:textColor="@android:color/black"
+      android:layout_marginStart="8dp"/>
+</LinearLayout>
+
+</RelativeLayout>
